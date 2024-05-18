@@ -1,1 +1,76 @@
+/* Custom font decleration */
+@font-face {
+    font-family: 'Bold';
+    src: url('./assets/fonts/PublicaSans-Bold.otf') format('opentype');
+}
+  
+@font-face {
+    font-family: 'Medium';
+    src: url('./assets/fonts/PublicaSans-Medium.otf') format('opentype');
+}
+  
+@font-face {
+    font-family: 'Light';
+    src: url('./assets/fonts/PublicaSans-Light.otf') format('opentype');
+}
 
+/* Variables for common Values*/
+:root {
+    --font-medium: 'Medium';
+    --font-light: 'Light';
+    --font-bold: 'Bold';
+    --padding-small: 4px;
+    --padding-medium: 15px;
+    --padding-large: 32px;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06), 0 -2px 4px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.06), 0 -2px 4px rgba(0, 0, 0, 0.06);
+    --box-shadow-hover: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+}
+
+/* Card styling */
+.card {
+    width: 275px;
+    height: 520px;
+    box-shadow: var(--box-shadow);
+    border-radius: 12px;
+    padding: var(--padding-medium);
+    margin: 15px;
+}
+  
+.card:hover {
+    box-shadow: var(--box-shadow-hover);  
+}
+
+/* Logo styling */
+.logo {
+    width: 35px;
+    height: 55px;
+    padding-right: 10px;
+}
+
+/* Top of the card styling */
+.cardTop {
+    display: inline-flex;
+}
+
+
+.companyName {
+    color: #8b8b8b;
+    padding: 2px 0;
+    letter-spacing: 2px;
+    font-family: var(--font-medium);
+}
+  
+
+.position {
+    font-family: var(--font-light);
+    padding-top: 5px;
+    text-transform: capitalize;
+}
+  
+
+.location {
+    font-family: var(--font-medium);
+    font-size: x-small;
+    padding: var(--padding-small) 0;
+    text-transform: capitalize;
+}
