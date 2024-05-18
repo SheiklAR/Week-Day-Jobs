@@ -40,18 +40,16 @@
     box-shadow: var(--box-shadow-hover);  
 }
 
-/* Logo styling */
-.logo {
-    width: 35px;
-    height: 55px;
-    padding-right: 10px;
-}
-
 /* Top of the card styling */
 .cardTop {
     display: inline-flex;
 }
 
+.logo {
+    width: 35px;
+    height: 55px;
+    padding-right: 10px;
+}
 
 .companyName {
     color: #8b8b8b;
@@ -59,7 +57,6 @@
     letter-spacing: 2px;
     font-family: var(--font-medium);
 }
-  
 
 .position {
     font-family: var(--font-light);
@@ -67,7 +64,6 @@
     text-transform: capitalize;
 }
   
-
 .location {
     font-family: var(--font-medium);
     font-size: x-small;
