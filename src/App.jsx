@@ -1,9 +1,18 @@
-import React from 'react'
+import React from 'react';
+import getSampleJdJSON from './jobData';
+import JobCard from './components/JobCard';
 
 const App = () => {
-  return (
-    <div>App</div>
-  )
-}
+  const jobData = getSampleJdJSON();
+  console.log(jobData)
 
-export default App
+  return (
+    <div className="app">
+      {jobData.map(job =>
+      <JobCard key={job.jdUid} job={job} />
+      )}
+    </div>
+  );
+};
+
+export default App;
