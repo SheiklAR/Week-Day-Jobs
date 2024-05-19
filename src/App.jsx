@@ -4,12 +4,13 @@ import JobCard from './components/JobCard';
 
 const App = () => {
   const jobData = getSampleJdJSON();
-  const job = jobData[0]
   console.log(jobData)
 
   return (
     <div className="app">
+      {jobData.map(job =>
       <JobCard key={job.jdUid} job={job} />
+      )}
     </div>
   );
 };
