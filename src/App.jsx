@@ -23,7 +23,7 @@ const App = () => {
   }
 
   if (selectedSalary) { 
-    filteredJobs = filteredJobs.filter(job => job.minJdSalary >= parseInt(selectedSalary.label))
+    filteredJobs = filteredJobs.filter(job => job.minJdSalary >= parseInt(selectedSalary.label)) 
   }
 
   return (
