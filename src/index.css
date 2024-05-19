@@ -19,9 +19,16 @@
     --font-medium: 'Medium';
     --font-light: 'Light';
     --font-bold: 'Bold';
+    --color-primary: #54efc3;
+    --color-primary-hover: #12edaf;
+    --color-secondary: #4943da;
+    --color-secondary-hover: #3029e3;
+    --color-text-dark: darkslategrey;
+    --color-text-gray: gray;
     --padding-small: 4px;
     --padding-medium: 15px;
     --padding-large: 32px;
+    --border-radius: 10px;
     --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06), 0 -2px 4px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.06), 0 -2px 4px rgba(0, 0, 0, 0.06);
     --box-shadow-hover: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
 }
@@ -29,7 +36,7 @@
 /* Card styling */
 .card {
     width: 275px;
-    height: 520px;
+    height: 530px;
     box-shadow: var(--box-shadow);
     border-radius: 12px;
     padding: var(--padding-medium);
@@ -134,9 +141,45 @@
     font-weight: 900;
   }
   
-  /* Experience year styling */
+/* Experience year styling */
 .exp-year {
     padding: 6px 0 5px;
     font-family: var(--font-light);
+}
+  
+/* Button styling */
+.button {
+    background-color: var(--color-primary);
+    padding: 12px var(--padding-large);
+    text-align: center;
+    display: inline-block;
+    font-family: var(--font-medium);
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 200px;
+    border-radius: var(--border-radius);
+}
+  
+.button:hover {
+    background-color: var(--color-primary-hover);
+}
+
+/* Button styling */
+#button {
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 15px var(--padding-large);
+    text-align: center;
+    display: inline-block;
+    font-family: var(--font-light);
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 200px;
+    border-radius: var(--border-radius);
+}
+  
+#button:hover {
+    background-color: var(--color-secondary-hover);
 }
   
