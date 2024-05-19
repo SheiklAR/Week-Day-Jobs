@@ -194,3 +194,9 @@
     margin: 0 10%;
 }
 
+/* Filters container styling */
+.filtersContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
