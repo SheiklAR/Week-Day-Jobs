@@ -124,3 +124,19 @@
     transform: translateX(-50%);
 }
 
+/* Experience styling */
+.experience {
+    font-family: var(--font-light);
+    padding-top: 16px;
+    letter-spacing: 2px;
+    color: var(--color-text-gray);
+    font-size: 14px;
+    font-weight: 900;
+  }
+  
+  /* Experience year styling */
+.exp-year {
+    padding: 6px 0 5px;
+    font-family: var(--font-light);
+}
+  
