@@ -109,6 +109,13 @@
     margin: 0 auto;
 }
 
+/* Bottom overflow fade styling */
+.bottom-overflow-fade {
+    mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+    overflow: hidden;
+}
+
 /* See more styling */
 .seeMore {
     position: absolute;
@@ -116,3 +123,4 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
