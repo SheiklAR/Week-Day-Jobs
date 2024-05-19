@@ -82,7 +82,7 @@ const Experience = ({ minExp, maxExp }) => (
 );
 
 const EasyApplyButton = () => (
-  <div className="button">
+  <div className="applyButton">
     <span className="material-symbols-outlined" style={{ verticalAlign: 'middle', color: '#F9DB78' }}>
       electric_bolt
     </span>
@@ -91,7 +91,7 @@ const EasyApplyButton = () => (
 );
 
 const UnlockReferralsButton = () => (
-  <div id="button">
+  <div className="referralsButton">
     Unlock referrals asks
   </div>
 );
