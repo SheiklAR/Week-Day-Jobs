@@ -36,7 +36,7 @@
 /* Card styling */
 .card {
     width: 275px;
-    height: 530px;
+    height: 510px;
     box-shadow: var(--box-shadow);
     border-radius: 12px;
     padding: var(--padding-medium);
