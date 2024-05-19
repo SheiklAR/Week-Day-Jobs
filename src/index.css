@@ -70,3 +70,27 @@
     padding: var(--padding-small) 0;
     text-transform: capitalize;
 }
+
+/* Salary styling */
+.salary {
+    padding: var(--padding-small) 0;
+    color: var(--color-text-dark);
+    font-family: var(--font-medium);
+    font-size: 14px;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+}
+  
+.salary > div {
+    padding-right: 3px;
+}
+/* green tick styling */
+.material-symbols-outlined {
+    font-variation-settings:
+      'FILL' 1,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24;
+    color: green;
+  }
