@@ -53,8 +53,10 @@ const Header = ({ logoUrl, companyName, jobRole, location }) => (
 
 const Salary = ({ minJdSalary, maxJdSalary }) => (
   <div className="salary">
-    {minJdSalary != null ? (
+    {minJdSalary && maxJdSalary ? (
       <div>Estimated Salary: ${minJdSalary}-${maxJdSalary}</div>
+    ) : minJdSalary ? (
+        <div>Minimum Estimated Salary: ${minJdSalary}</div>
     ) : (
       <div>Maximum Estimated Salary: ${maxJdSalary}</div>
     )}
