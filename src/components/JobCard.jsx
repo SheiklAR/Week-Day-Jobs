@@ -64,10 +64,10 @@ const Salary = ({ minJdSalary, maxJdSalary }) => (
 
 const Description = ({ description, subdescription }) => (
   <div className="about">
-    <div className="about-company">About Company:</div>
-    <div className="about-us">
+    <div className="aboutCompany">About Company:</div>
+    <div className="aboutUs">
       <p className="bottom-overflow-fade">{subdescription}</p>
-      <div className="see-more">
+      <div className="viewJob">
         <SimplePopper description={description} />
       </div>
     </div>
