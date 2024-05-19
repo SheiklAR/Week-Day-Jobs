@@ -7,7 +7,7 @@ const App = () => {
   console.log(jobData)
 
   return (
-    <div className="app">
+    <div className="cardContainer">
       {jobData.map(job =>
       <JobCard key={job.jdUid} job={job} />
       )}

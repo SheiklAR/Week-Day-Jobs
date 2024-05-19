@@ -182,3 +182,14 @@
 .referralsButton:hover {
     background-color: var(--color-secondary-hover);
 }
+
+/* card container styling */
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10%;
+}
