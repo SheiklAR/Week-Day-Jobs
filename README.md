@@ -8,8 +8,8 @@ This project is Week Day's jobs listings application built with React.
 1. **Clone the repository**:
    paste this command on your terminal to clone the project's repository on your local machine.
     ```sh
-    git clone https://github.com/your-username/job-listings.git
-    cd job-listings
+    git clone https://github.com/SheiklAR/Week-Day-Jobs.git
+    cd Week-Day-Jobs
     ```
 
 3. **Install dependencies**:
