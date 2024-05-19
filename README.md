@@ -1,8 +1,38 @@
-# React + Vite
+# Week Day's Job Listings
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+This project is Week Day's jobs listings application built with React.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/)
+1. **Clone the repository**:
+    ```sh
+    git clone https://github.com/your-username/job-listings.git
+    cd job-listings
+    ```
+
+2. **Install dependencies**:
+    ```sh
+    npm install
+    ```
+
+3. **Start the application**:
+    ```sh
+    npm run dev
+    ```
+
+## Usage
+Open your browser and navigate to `http://localhost:3000` to view the application.
+
+## Features
+- Filter jobs by role, experience, and salary.
+- View job details in a card layout.
+
+## Technologies Used
+- React
+- Material-UI
+
+
+## License
+This project is licensed under the MIT License.
+
