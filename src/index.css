@@ -148,7 +148,7 @@
 }
   
 /* Button styling */
-.button {
+.applyButton {
     background-color: var(--color-primary);
     padding: 12px var(--padding-large);
     text-align: center;
@@ -160,12 +160,12 @@
     border-radius: var(--border-radius);
 }
   
-.button:hover {
+.applyButton:hover {
     background-color: var(--color-primary-hover);
 }
 
 /* Button styling */
-#button {
+.referralsButton {
     background-color: var(--color-secondary);
     color: white;
     padding: 15px var(--padding-large);
@@ -179,7 +179,6 @@
     border-radius: var(--border-radius);
 }
   
-#button:hover {
+.referralsButton:hover {
     background-color: var(--color-secondary-hover);
 }
-  
