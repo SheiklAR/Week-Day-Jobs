@@ -108,3 +108,11 @@
     position: relative;
     margin: 0 auto;
 }
+
+/* See more styling */
+.seeMore {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
