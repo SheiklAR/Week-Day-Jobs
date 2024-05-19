@@ -27,7 +27,7 @@ const SimplePopper = ({ description }) => {
 
   return (
     <div>
-      <Button ref={anchorRef} onClick={handleTogglePopper}  variant="text">
+      <Button ref={anchorRef} onClick={handleTogglePopper}  variant="text" style={{ textTransform: 'none' }}>
         View Job
       </Button>
       <Popper open={open} anchorEl={anchorRef.current} placement="top">
@@ -37,7 +37,6 @@ const SimplePopper = ({ description }) => {
           maxHeight: '600px',
           overflowY: 'auto',
           borderRadius: '4px',
-
         }}>
           <Typography variant="subtitle1" >{description}</Typography>
         </Paper>
