@@ -39,11 +39,11 @@ const JobCard = ({ job }) => {
 };
 
 const Header = ({ logoUrl, companyName, jobRole, location }) => (
-  <div className="cardTop">
+  <div className="head-card">
     <img src={logoUrl} className="logo" alt={`${companyName} logo`} />
     <div>
       <div className="name">
-        <div className="companyName">{companyName}</div>
+        <div className="company-name">{companyName}</div>
         <div className="position">{jobRole}</div>
         <div className="location">{location}</div>
       </div>
