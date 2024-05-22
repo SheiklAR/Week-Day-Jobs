@@ -6,16 +6,21 @@ import ExperienceFilter from './components/filters/ExperienceFilter';
 import SalaryFilter from './components/filters/SalaryFilter';
 
 const App = () => {
-  const [selectedRole, setSelectedRole] = useState(null);
+  const [selectedRole, setSelectedRole] = useState([]);
   const [selectedExperience, setSelectedExperience] = useState(null);
   const [selectedSalary, setSelectedSalary] = useState(null);
 
   const jobData = getSampleJdJSON();
+
   
   let filteredJobs = jobData
-
-  if (selectedRole) { 
-    filteredJobs = filteredJobs.filter(job => job.jobRole.toLowerCase() === selectedRole.label.toLowerCase())
+  
+  if (selectedRole.length > 0) {
+    filteredJobs = filteredJobs.filter(job =>
+      selectedRole.some(role =>
+        role.label.toLowerCase() === job.jobRole.toLowerCase()
+      )
+    );
   }
 
   if (selectedExperience) { 
@@ -29,7 +34,7 @@ const App = () => {
   return (
     <>
       <div className="filtersContainer">
-        <RoleFilter setSelectedRole={setSelectedRole} />
+        <RoleFilter setSelectedRole={setSelectedRole} selectedRole={selectedRole} />
         <ExperienceFilter setSelectedExperience={setSelectedExperience} />
         <SalaryFilter setSelectedSalary={setSelectedSalary} />
       </div>  
@@ -43,3 +48,4 @@ const App = () => {
 };
 
 export default App;
+
