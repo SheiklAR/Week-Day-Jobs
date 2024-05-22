@@ -1,6 +1,6 @@
 import React from 'react';
-import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
+import TextField from '@mui/material/TextField';
 
 const roles = [
   { label: 'Frontend' },
@@ -12,17 +12,24 @@ const roles = [
   { label: 'Tech Lead' },
 ];
 
-const RoleFilter = ({ setSelectedRole }) => {
+export default function RoleFilter({ setSelectedRole, selectedRole }) {
   return (
     <Autocomplete
-      disablePortal
-      id="roles"
+      multiple
+      id="tags-outlined"
       options={roles}
-      sx={{ width: 200 }}
+      getOptionLabel={(option) => option.label}
+      value={selectedRole}
       onChange={(event, value) => setSelectedRole(value)}
-      renderInput={(params) => <TextField {...params} label="Role" />}
+      filterSelectedOptions
+      sx={{ width: 200 }}
+      renderInput={(params) => (
+        <TextField
+          {...params}
+          label="Roles"
+          placeholder="Select roles"
+        />
+      )}
     />
   );
-};
-
-export default RoleFilter;
+}
